@@ -18,6 +18,7 @@ body {
   height: 100vh;
   -webkit-transition: background-image 1s ease-in-out;
   transition: background-image 1s ease-in-out;
+  overflow: hidden;
 }
 
 .clock {
@@ -25,7 +26,7 @@ body {
   height: var(--clock-size);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4),
               0 0 30px rgba(0, 0, 0, 0.4),
               inset 0 0 20px rgba(0, 0, 0, 0.1);
