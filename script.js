@@ -20,3 +20,10 @@ setInterval(() => {
 function setHandRotation(element, rotationRatio) {
     element.style.setProperty("--rotation", rotationRatio * 360);
 }
+
+let img = new Image();
+img.src = `https://picsum.photos/1920/1080?random=${Math.floor(Math.random() * 10000)}`;
+setInterval(() => {
+    document.body.style.backgroundImage = `url(${img.src})`;
+    img.src = `https://picsum.photos/1920/1080?random=${Math.floor(Math.random() * 10000)}`;
+}, 30000)
