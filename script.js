@@ -24,12 +24,12 @@ function setHandRotation(element, rotationRatio) {
 
 let img = new Image();
 img.src = `https://picsum.photos/1920/1080?random=${Math.floor(
-  Math.random() * 10000
+  Math.random() * 1000000
 )}`;
 setInterval(() => {
   document.body.style.backgroundImage = `url(${img.src})`;
   img.src = `https://picsum.photos/1920/1080?random=${Math.floor(
-    Math.random() * 10000
+    Math.random() * 1000000
   )}`;
 }, 30000);
 
